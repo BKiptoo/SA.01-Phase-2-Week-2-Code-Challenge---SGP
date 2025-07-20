@@ -23,7 +23,8 @@ function App() {
         setLoading(false);
       })
       .catch((err) => {
-        alert('Failed to fetch goals!');
+        console.error('Error fetching goals:', err);
+        alert('Failed to load your goals. Please check your connection and try again.');
         setLoading(false);
       });
   }, []);

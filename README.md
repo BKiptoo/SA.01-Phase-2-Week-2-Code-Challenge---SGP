@@ -13,6 +13,33 @@ A simple, clean web app to help you manage multiple savings goals, track your pr
 
 ---
 
+## 📸 Screenshots
+
+### Main Dashboard Overview
+![Smart Goal Planner Dashboard](./screenshots/dashboard-overview.png)
+*Clean, modern dashboard showing your financial journey overview with key statistics and goal tracking*
+
+### Enhanced Warning System
+![Warning Notifications](./screenshots/warning-notifications.png)
+*Professional notification system with stylish pill-shaped alerts for overdue goals and upcoming deadlines*
+
+### Goal Management Interface
+![Goal Cards Interface](./screenshots/goal-cards.png)
+*Beautiful goal cards displaying progress, targets, and action buttons with a clean modern design*
+
+### Add New Goal Modal
+![Add Goal Form](./screenshots/add-goal-modal.png)
+*Intuitive goal creation form with category selection and date picker*
+
+### Key Features Highlighted:
+- ✨ **Modern Design**: Professional website styling with gradients and glass-morphism effects
+- 🎯 **Smart Notifications**: Enhanced warning system for deadline management
+- 📊 **Visual Progress**: Clear progress tracking with statistics
+- 🎨 **Responsive Layout**: Adapts beautifully to different screen sizes
+- 🔔 **Interactive Alerts**: Hover effects and smooth animations
+
+---
+
 ## 🛠️ Tech Stack
 - **React** (frontend)
 - **json-server** (local REST API)
@@ -74,6 +101,14 @@ SA.01-Phase-2-Week-2-Code-Challenge---SGP/
 
 ## 🙋‍♂️ Questions or Improvements?
 Feel free to ask for help or suggest features!
+
+---
+
+## 📷 Adding Screenshots
+To display the screenshots in this README:
+1. Save your screenshot images in the `screenshots/` directory
+2. Name them: `dashboard-overview.png`, `warning-notifications.png`, `goal-cards.png`, `add-goal-modal.png`
+3. The README will automatically display them in the Screenshots section above
 
 ---
 

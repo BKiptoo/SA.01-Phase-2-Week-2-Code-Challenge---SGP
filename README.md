@@ -25,7 +25,7 @@ A simple, clean web app to help you manage multiple savings goals, track your pr
 
 ### Goal Management Interface
 ![Goal Cards Interface](./screenshots/goal-cards.png)
-*Beautiful goal cards displaying progress, targets, and action buttons with a clean modern design*
+*Beautiful modal for adding goals*
 
 ### Key Features Highlighted:
 - ✨ **Modern Design**: Professional website styling with gradients and glass-morphism effects

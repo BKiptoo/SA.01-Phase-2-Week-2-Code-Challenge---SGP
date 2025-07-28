@@ -89,6 +89,15 @@
       "category": "Home",
       "deadline": "2025-03-31",
       "createdAt": "2024-05-15"
+    },
+    {
+      "id": "8be1",
+      "name": "23",
+      "targetAmount": 23223223,
+      "category": "Travel",
+      "deadline": "2025-07-30",
+      "savedAmount": 2345679977,
+      "createdAt": "2025-07-28"
     }
   ]
 }

@@ -75,12 +75,6 @@ function App() {
             <h1>💰 Smart Goal Planner</h1>
             <p>Master your financial future, one goal at a time</p>
           </div>
-          <nav className="main-nav">
-            <button className="nav-btn active">Dashboard</button>
-            <button className="nav-btn">Goals</button>
-            <button className="nav-btn">Analytics</button>
-            <button className="nav-btn">Settings</button>
-          </nav>
         </div>
       </header>
 

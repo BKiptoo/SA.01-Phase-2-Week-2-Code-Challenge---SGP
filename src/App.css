@@ -3,7 +3,7 @@
 /* CSS Variables */
 :root {
   --primary-color: #4F46E5;
-  --primary-light: #6366F1;
+  --primary-light: #0c0fb6;
   --success-color: #10B981;
   --warning-color: #F59E0B;
   --error-color: #EF4444;
@@ -43,7 +43,7 @@ body {
 .website-header {
   background: var(--white);
   box-shadow: var(--shadow);
-  padding: 1rem 0;
+  padding: 1rem 90px;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -72,22 +72,6 @@ body {
 .main-nav {
   display: flex;
   gap: 0.5rem;
-}
-
-.nav-btn {
-  padding: 0.5rem 1rem;
-  background: none;
-  border: none;
-  border-radius: var(--border-radius);
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.nav-btn:hover,
-.nav-btn.active {
-  background: var(--primary-color);
-  color: var(--white);
 }
 
 /* Main Content */

@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api/goals.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/goals/:id",
+      "destination": "/api/goals.js"
+    },
+    {
+      "source": "/api/goals",
+      "destination": "/api/goals.js"
+    }
+  ]
+}

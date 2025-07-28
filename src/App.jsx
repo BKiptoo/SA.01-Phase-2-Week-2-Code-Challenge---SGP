@@ -3,6 +3,7 @@ import './App.css';
 import Overview from './components/Overview';
 import GoalForm from './components/GoalForm';
 import GoalCard from './components/GoalCard';
+import { apiConfig } from './config/api';
 
 function App() {
   // State to store all goals
@@ -16,7 +17,7 @@ function App() {
 
   // Fetch goals from the API when the app loads
   useEffect(() => {
-    fetch('http://localhost:3000/goals')
+    fetch(apiConfig.goals)
       .then((res) => res.json())
       .then((data) => {
         setGoals(data);
@@ -134,35 +135,6 @@ function App() {
           </section>
         </div>
       </main>
-
-      {/* Footer */}
-      <footer className="website-footer">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h4>Smart Goal Planner</h4>
-            <p>Your trusted partner in financial planning</p>
-          </div>
-          <div className="footer-section">
-            <h4>Features</h4>
-            <ul>
-              <li>Goal Tracking</li>
-              <li>Progress Analytics</li>
-              <li>Smart Reminders</li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Support</h4>
-            <ul>
-              <li>Help Center</li>
-              <li>Contact Us</li>
-              <li>Privacy Policy</li>
-            </ul>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <p>&copy; 2025 Smart Goal Planner. Built with ❤️ for your financial success.</p>
-        </div>
-      </footer>
 
       {/* Modal */}
       {showForm && (

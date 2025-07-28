@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DepositModal from './DepositModal';
+import { apiConfig } from '../config/api';
 
 function GoalCard({ goal, onEdit, onDelete, setGoals, goals }) {
   // State to show/hide the deposit modal
@@ -17,7 +18,7 @@ function GoalCard({ goal, onEdit, onDelete, setGoals, goals }) {
   // Handle delete button click
   const handleDelete = () => {
     // Delete from server
-    fetch(`http://localhost:3000/goals/${goal.id}`, { method: 'DELETE' })
+    fetch(`${apiConfig.goals}/${goal.id}`, { method: 'DELETE' })
       .then(() => {
         onDelete(goal.id);
       });
@@ -26,10 +27,10 @@ function GoalCard({ goal, onEdit, onDelete, setGoals, goals }) {
   // Handle deposit
   const handleDeposit = (amount) => {
     // Update on server
-    fetch(`http://localhost:3000/goals/${goal.id}`, {
-      method: 'PATCH',
+    fetch(`${apiConfig.goals}/${goal.id}`, {
+      method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ savedAmount: Number(goal.savedAmount) + Number(amount) })
+      body: JSON.stringify({ ...goal, savedAmount: Number(goal.savedAmount) + Number(amount) })
     })
       .then(res => res.json())
       .then((updatedGoal) => {

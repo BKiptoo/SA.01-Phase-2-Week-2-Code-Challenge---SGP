@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { apiConfig } from '../config/api';
 
 const categories = [
     "Travel",
@@ -55,7 +56,7 @@ function GoalForm({ onClose, onCreate, onUpdate, editGoal }) {
         };
         if (editGoal) {
             // Update on server
-            fetch(`http://localhost:3000/goals/${editGoal.id}`, {
+            fetch(`${apiConfig.goals}/${editGoal.id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ ...editGoal, ...goalData }),
@@ -66,7 +67,7 @@ function GoalForm({ onClose, onCreate, onUpdate, editGoal }) {
                 });
         } else {
             // Create on server
-            fetch("http://localhost:3000/goals", {
+            fetch(apiConfig.goals, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(goalData),
